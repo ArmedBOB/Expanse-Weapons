@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>Zakosetara Heavy Railgun WeaponDefinition</SubtypeId>
+            </Id>
+            <ProjectileAmmoData RateOfFire="1" ShootSoundName="" ShotsInBurst="1"/>
+            <NoAmmoSoundName>480mm_whiplash_railgun_fixed_empty_Audio</NoAmmoSoundName>
+            <DeviateShotAngle>0.01</DeviateShotAngle>
+            <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="120mmLeadSteelSlugMagazine"/>
+            </AmmoMagazines>
+            <ReloadTime>0</ReloadTime>
+        </Weapon>
+        <Weapon>
+          <Id>
+            <TypeId>WeaponDefinition</TypeId>
+            <SubtypeId>Zakosetara Heavy Railgun MES WeaponDefinition</SubtypeId>
+          </Id>
+          <ProjectileAmmoData RateOfFire="1" ShootSoundName="" ShotsInBurst="1"/>
+          <NoAmmoSoundName>480mm_whiplash_railgun_fixed_empty_Audio</NoAmmoSoundName>
+          <DeviateShotAngle>0.01</DeviateShotAngle>
+          <ReleaseTimeAfterFire>3000</ReleaseTimeAfterFire>
+          <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+          <AmmoMagazines>
+            <AmmoMagazine Subtype="120mmLeadSteelSlugMagazine"/>
+          </AmmoMagazines>
+          <ReloadTime>0</ReloadTime>
+        </Weapon>
+    </Weapons>
+</Definitions>

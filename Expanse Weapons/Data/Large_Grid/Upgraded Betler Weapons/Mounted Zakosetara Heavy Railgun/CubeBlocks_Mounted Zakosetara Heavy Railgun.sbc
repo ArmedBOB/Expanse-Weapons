@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		  <Id>
+			  <TypeId>LargeMissileTurret</TypeId>
+			  <SubtypeId>Mounted Zakosetara Heavy Railgun</SubtypeId>
+		  </Id>
+		  <DisplayName>Mounted Zakosetara Heavy Railgun</DisplayName>
+		  <Icon>Icons\Weapons\Upgraded Belter Weapons\Mounted Zakosetara Heavy Railgun\Mounted Zakosetara  Railgun.png</Icon>
+		  <Description></Description>
+	  <CubeSize>Large</CubeSize>
+	  <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="5" y="3" z="5"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\Synirr\Weapons\Upgraded Belter Weapons\Mounted Zakosetara Railgun\Mounted Zakosetara Railgun.mwm</Model>
+		  <UseModelIntersection>true</UseModelIntersection>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>180</BuildTimeSeconds>
+		  <InventoryMaxVolume>0.276</InventoryMaxVolume>  <!-- In Liters, add 3 zero's -->
+		<Components>
+		<Component Subtype="PowerCell" Count="1240" />
+		<Component Subtype="Superconductor" Count="800" />
+		<Component Subtype="Girder" Count="1210" />
+		<Component Subtype="SmallTube" Count="990" />
+		<Component Subtype="LargeTube" Count="1210" />
+		<Component Subtype="InteriorPlate" Count="1650" />
+		<Component Subtype="Motor" Count="1540" />
+		<Component Subtype="Computer" Count="2850" />
+		<Component Subtype="MetalGrid" Count="3190" />
+		<Component Subtype="Construction" Count="2200" />
+		<Component Subtype="SteelPlate" Count="6830" />
+		</Components>
+	  <CriticalComponent Subtype="Computer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+
+	  <MountPoints>
+		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+	  </MountPoints>
+	  <BuildProgressModels>
+		<Model BuildPercentUpperBound="0.33" File="Models\Synirr\Weapons\Upgraded Belter Weapons\Mounted Zakosetara Railgun\Mounted Zakosetara Railgun_BS1.mwm"/>
+		<Model BuildPercentUpperBound="0.67" File="Models\Synirr\Weapons\Upgraded Belter Weapons\Mounted Zakosetara Railgun\Mounted Zakosetara Railgun_BS2.mwm"/>
+		<Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\Upgraded Belter Weapons\Mounted Zakosetara Railgun\Mounted Zakosetara Railgun_BS3.mwm"/>
+	  </BuildProgressModels>
+	  <BlockPairName>Mounted Zakosetara Railgun</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>
+	  <StandbyPowerConsumption>1</StandbyPowerConsumption>
+	  <OperationalPowerConsumption>140</OperationalPowerConsumption>
+		  <EdgeType>Light</EdgeType>
+		  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+		  <WeaponDefinitionId Subtype="Mounted Zakosetara Heavy Railgun WeaponDefinition" />
+		  <DamageEffectName>Damage_GravGen_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleElectrical</DamagedSound>
+		  <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+		  <DestroySound>WepLrgWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>-10</MinElevationDegrees>
+		  <MaxElevationDegrees>40</MaxElevationDegrees>
+		  <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+		  <RotationSpeed>0.001</RotationSpeed>
+		  <ElevationSpeed>0.001 </ElevationSpeed>
+		  <MaxRangeMeters>0</MaxRangeMeters>
+		  <AiEnabled>false</AiEnabled>
+		  <DeformationRatio>0.1</DeformationRatio>
+		  <IdleRotation>false</IdleRotation>
+		  <EmissiveColorPreset>Default</EmissiveColorPreset>
+		  <MinFov>0.1</MinFov>
+		  <MaxFov>1.04719755</MaxFov>
+		  <PCU>1000</PCU>
+	</Definition>
+  </CubeBlocks>
+</Definitions>

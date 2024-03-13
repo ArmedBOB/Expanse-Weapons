@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeGatlingTurret</TypeId>
+        <SubtypeId>Redfields Ballistics PDC</SubtypeId>
+      </Id>
+      <DisplayName>Redfields Ballistics PDC</DisplayName>
+      <Icon>Icons\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC.png</Icon>
+      <Description>A point defence cannon from the Redfield Ballistics corporation. A durable weapons system in comparison with its MCRN counterparts it makes up for its innacuracies by lasting longer than its competitors and supporting a higher rate of fire. Fires 40mm Tungsten-Teflon PDC rounds.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+           <Components>
+             <Component Subtype="Girder" Count="20" />
+             <Component Subtype="SmallTube" Count="40" />
+             <Component Subtype="LargeTube" Count="40" />
+             <Component Subtype="InteriorPlate" Count="20" />
+             <Component Subtype="Motor" Count="90" />
+             <Component Subtype="Computer" Count="200" />
+             <Component Subtype="MetalGrid" Count="90" />
+             <Component Subtype="SteelPlate" Count="330" />
+           </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC_BS3.mwm"/>
+      </BuildProgressModels>
+      <StandbyPowerConsumption>1</StandbyPowerConsumption>
+      <OperationalPowerConsumption>15</OperationalPowerConsumption>
+      <BlockPairName>Redfields Ballistics PDC</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="Redfields Ballistics PDC WeaponDefinition" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-43</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>0</MaxRangeMeters>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>400</PCU>
+      <IsAirTight>false</IsAirTight>      
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		<Id>
+			<TypeId>LargeGatlingTurret</TypeId>
+			<SubtypeId>Redfields Ballistics PDC MES</SubtypeId>
+		</Id>
+		<DisplayName>Redfields Ballistics PDC</DisplayName>
+		<Icon>Icons\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC.png</Icon>
+		<Description>A point defence cannon from the Redfield Ballistics corporation. A durable weapons system in comparison with its MCRN counterparts it makes up for its innacuracies by lasting longer than its competitors and supporting a higher rate of fire. Fires 40mm Tungsten-Teflon PDC rounds.</Description>
+		<CubeSize>Large</CubeSize>
+		<GuiVisible>false</GuiVisible>
+		<Public>false</Public>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="2" z="1"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC.mwm</Model>
+		<UseModelIntersection>true</UseModelIntersection>
+		<Components>
+			<Component Subtype="Girder" Count="20" />
+			<Component Subtype="SmallTube" Count="40" />
+			<Component Subtype="LargeTube" Count="40" />
+				<DeconstructId>
+					<TypeId>Ingot</TypeId>
+					<SubtypeId>UNNCompTechScrap</SubtypeId>
+				</DeconstructId>
+			<Component Subtype="Motor" Count="90" />
+			<Component Subtype="Computer" Count="200" />
+			<Component Subtype="MetalGrid" Count="90" />
+			<Component Subtype="SteelPlate" Count="330" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+		<MountPoints>
+			<MountPoint Side="Front" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+			<MountPoint Side="Back" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+			<MountPoint Side="Left" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+			<MountPoint Side="Right" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.67" File="Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\UNN and MCRN\UNN Weapons\Redfield Ballistics PDC\Redfields Ballistics PDC_BS3.mwm"/>
+		</BuildProgressModels>
+		<StandbyPowerConsumption>1</StandbyPowerConsumption>
+		<OperationalPowerConsumption>15</OperationalPowerConsumption>
+		<BlockPairName>Redfields Ballistics PDC MES</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>30</BuildTimeSeconds>
+		<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+		<WeaponDefinitionId Subtype="Redfields Ballistics PDC WeaponDefinition" />
+		<InventoryMaxVolume>0.384</InventoryMaxVolume>
+		<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<MinElevationDegrees>-43</MinElevationDegrees>
+		<MaxElevationDegrees>90</MaxElevationDegrees>
+		<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+		<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+		<RotationSpeed>0.002</RotationSpeed>
+		<ElevationSpeed>0.002 </ElevationSpeed>
+		<IdleRotation>false</IdleRotation>
+		<MaxRangeMeters>0</MaxRangeMeters>
+		<MinFov>0.1</MinFov>
+		<MaxFov>1.04719755</MaxFov>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+		<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+		<DestroySound>WepSmallWarheadExpl</DestroySound>
+		<PCU>400</PCU>
+		<IsAirTight>false</IsAirTight>
+	</Definition>
+
+  </CubeBlocks>
+</Definitions>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<CubeBlocks>    
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>Zakosetara Heavy Railgun</SubtypeId>
+      </Id>
+      <DisplayName>Zakosetara Heavy Railgun</DisplayName>
+      <Icon>Icons\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun.png</Icon>
+      <Description>Zakosetara-series fixed railguns were extremely powerful, and it was feared that the recoil from these guns would buckle the entire hull of the onetime generation ship, as well as causing ship-wide power grid failures, due to the ship not being designed for combat.</Description>
+    <CubeSize>Large</CubeSize>
+    <BlockTopology>TriangleMesh</BlockTopology>
+    <Size x="2" y="1" z="8"/>
+    <ModelOffset x="0" y="0" z="0"/>
+    <Model>Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun.mwm</Model>
+    <Components>
+      <Component Subtype="PowerCell" Count="110" />
+      <Component Subtype="Superconductor" Count="80" />
+      <Component Subtype="Girder" Count="70" />
+      <Component Subtype="SmallTube" Count="90" />
+      <Component Subtype="LargeTube" Count="110" />
+      <Component Subtype="InteriorPlate" Count="150" />
+      <Component Subtype="Motor" Count="140" />
+      <Component Subtype="Computer" Count="250" />
+      <Component Subtype="MetalGrid" Count="280" />
+      <Component Subtype="Construction" Count="150" />
+      <Component Subtype="SteelPlate" Count="480" />
+    </Components>
+    <CriticalComponent Subtype="Computer" Index="0" />
+    <MountPoints>
+      <MountPoint Side="Back" StartX="0.18" StartY="0.00" EndX="1.51" EndY="1.00"/>
+      <MountPoint Side="Top" StartX="0.49" StartY="0.05" EndX="1.51" EndY="2.76"/>
+      <MountPoint Side="Bottom" StartX="0.31" StartY="5.22" EndX="1.51" EndY="7.98"/>
+    </MountPoints>
+    <BuildProgressModels>
+      <Model BuildPercentUpperBound="0.33" File="Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun_BS1.mwm"/>
+      <Model BuildPercentUpperBound="0.67" File="Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun_BS2.mwm"/>
+      <Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun_BS3.mwm"/>
+    </BuildProgressModels>
+    <StandbyPowerConsumption>1</StandbyPowerConsumption>
+    <OperationalPowerConsumption>20</OperationalPowerConsumption>
+    <BlockPairName>Zakosetara Heavy Railgun</BlockPairName>
+    <MirroringX>Z</MirroringX>
+    <MirroringY>Z</MirroringY>
+    <MirroringZ>Y</MirroringZ>
+    <WeaponDefinitionId Subtype="Zakosetara Heavy Railgun WeaponDefinition" />
+	  <InventoryMaxVolume>0.32</InventoryMaxVolume>
+	  <DamageEffectId>214</DamageEffectId>
+	  <ExcludedAreaForCamera>10</ExcludedAreaForCamera>
+	  <BuildTimeSeconds>60</BuildTimeSeconds>
+	  <PhysicsOption>Convex</PhysicsOption>
+
+    <PCU>1875</PCU>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>Zakosetara Heavy Railgun MES</SubtypeId>
+      </Id>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <DisplayName>Zakosetara Heavy Railgun MES</DisplayName>
+      <Icon>Icons\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun.png</Icon>
+      <Description>Zakosetara-series fixed railguns were extremely powerful, and it was feared that the recoil from these guns would buckle the entire hull of the onetime generation ship, as well as causing ship-wide power grid failures, due to the ship not being designed for combat.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="2" y="1" z="8"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun.mwm</Model>
+      <Components>
+        <Component Subtype="PowerCell" Count="110" />
+        <Component Subtype="Superconductor" Count="80" />
+        <Component Subtype="Girder" Count="70" />
+        <Component Subtype="SmallTube" Count="90" />
+        <Component Subtype="LargeTube" Count="110" />
+        <Component Subtype="InteriorPlate" Count="150" />
+          <DeconstructId>
+            <TypeId>Ore</TypeId>
+            <SubtypeId>HighTechScrap</SubtypeId>
+          </DeconstructId>
+        <Component Subtype="Motor" Count="140" />
+        <Component Subtype="Computer" Count="250" />
+        <Component Subtype="MetalGrid" Count="280" />
+        <Component Subtype="Construction" Count="150" />
+        <Component Subtype="SteelPlate" Count="480" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.18" StartY="0.00" EndX="1.51" EndY="1.00"/>
+        <MountPoint Side="Top" StartX="0.49" StartY="0.05" EndX="1.51" EndY="2.76"/>
+        <MountPoint Side="Bottom" StartX="0.31" StartY="5.22" EndX="1.51" EndY="7.98"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\Ramshackle Belter Weapons\Zakosetara Heavy Railgun\Zakosetara Heavy Railgun_BS3.mwm"/>
+      </BuildProgressModels>
+      <StandbyPowerConsumption>1</StandbyPowerConsumption>
+      <OperationalPowerConsumption>20</OperationalPowerConsumption>
+      <BlockPairName>Zakosetara Heavy Railgun MES</BlockPairName>
+      <MirroringX>Z</MirroringX>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <WeaponDefinitionId Subtype="Zakosetara Heavy Railgun MES WeaponDefinition" />
+      <InventoryMaxVolume>0.32</InventoryMaxVolume>
+      <DamageEffectId>214</DamageEffectId>
+      <ExcludedAreaForCamera>10</ExcludedAreaForCamera>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+      <PhysicsOption>Convex</PhysicsOption>
+
+      <PCU>1875</PCU>
+    </Definition>
+</CubeBlocks>
+</Definitions>
+

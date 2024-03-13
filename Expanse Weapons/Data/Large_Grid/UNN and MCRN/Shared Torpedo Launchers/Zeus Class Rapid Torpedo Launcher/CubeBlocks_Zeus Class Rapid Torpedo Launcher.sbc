@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>ZeusClass_Rapid_Torpedo_Launcher</SubtypeId>
+			</Id>
+			<DisplayName>Zeus Class Rapid Torpedo Launcher</DisplayName>
+			<Description>A triple tube torpedo launcher which boasts an autoloading compartment that contains everything needed to load torpedoes from storage into the tube.</Description>
+			<Icon>Icons\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher.mwm</Model>
+			<Components>
+				<Component Subtype="Girder" Count="150" />
+				<Component Subtype="SmallTube" Count="120" />
+				<Component Subtype="LargeTube" Count="135" />
+				<Component Subtype="InteriorPlate" Count="150" />
+				<Component Subtype="Motor" Count="300" />
+				<Component Subtype="Computer" Count="300" />
+				<Component Subtype="MetalGrid" Count="300" />
+				<Component Subtype="SteelPlate" Count="570" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.50" EndX="3.00" EndY="2.50"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="5.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher_BS2.mwm"/>
+			</BuildProgressModels>
+			<StandbyPowerConsumption>1</StandbyPowerConsumption>
+			<OperationalPowerConsumption>45</OperationalPowerConsumption>
+			<BlockPairName>Zeus Class Torpedo Launcher</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.1</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<WeaponDefinitionId Subtype="Zeus Class Rapid Torpedo Launcher WeaponDefinition" />
+			<PCU>1000</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>ZeusClass_Rapid_Torpedo_Launcher_MES</SubtypeId>
+			</Id>
+			<DisplayName>Zeus Class Rapid Torpedo Launcher</DisplayName>
+			<Description>A triple tube torpedo launcher which boasts an autoloading compartment that contains everything needed to load torpedoes from storage into the tube.</Description>
+			<Icon>Icons\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<GuiVisible>false</GuiVisible>
+			<Public>false</Public>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher.mwm</Model>
+			<Components>
+				<Component Subtype="Girder" Count="150" />
+				<Component Subtype="SmallTube" Count="120" />
+				<Component Subtype="LargeTube" Count="135" />
+				<Component Subtype="InteriorPlate" Count="150" />
+					<DeconstructId>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>InnerTechScrap</SubtypeId>
+					</DeconstructId>
+				<Component Subtype="Motor" Count="300" />
+				<Component Subtype="Computer" Count="300" />
+				<Component Subtype="MetalGrid" Count="300" />
+				<Component Subtype="SteelPlate" Count="570" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.50" EndX="3.00" EndY="2.50"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="5.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Zeus Class Rapid Torpedo Launcher\Zeus Class Torpedo Launcher_BS2.mwm"/>
+			</BuildProgressModels>
+			<StandbyPowerConsumption>1</StandbyPowerConsumption>
+			<OperationalPowerConsumption>45</OperationalPowerConsumption>
+			<BlockPairName>Zeus Class Torpedo Launcher MES</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.1</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<WeaponDefinitionId Subtype="Zeus Class Rapid Torpedo Launcher WeaponDefinition" />
+			<PCU>1000</PCU>
+		</Definition>
+	</CubeBlocks>
+</Definitions>
