@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>Ares_Class_Torpedo_Launcher_F</SubtypeId>
+			</Id>
+			<DisplayName>Ares Class Torpedo Launcher Flat</DisplayName>
+			<Description>A single tube torpedo launcher which boasts an autoloading compartment that contains everything needed to load torpedoes from storage into the tube.</Description>
+			<Icon>Icons\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat.png</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="5"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="150" />
+        <Component Subtype="SmallTube" Count="120" />
+        <Component Subtype="LargeTube" Count="135" />
+        <Component Subtype="InteriorPlate" Count="150" />
+        <Component Subtype="Motor" Count="300" />
+        <Component Subtype="Computer" Count="300" />
+        <Component Subtype="MetalGrid" Count="300" />
+        <Component Subtype="Construction" Count="210" />
+        <Component Subtype="SteelPlate" Count="570" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.50" EndX="5.00" EndY="1.50"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.50" EndX="5.00" EndY="1.50"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="5.00"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="5.00"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat_BS1.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat_BS2.mwm"/>
+      </BuildProgressModels>
+      <StandbyPowerConsumption>1</StandbyPowerConsumption>
+      <OperationalPowerConsumption>45</OperationalPowerConsumption>
+      <BlockPairName>Ares Class Torpedo Launcher Flat</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <WeaponDefinitionId Subtype="Ares Class Torpedo Launcher Flat WeaponDefinition" />
+      <PCU>300</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>Ares_Class_Torpedo_Launcher_F_MES</SubtypeId>
+			</Id>
+			<DisplayName>Ares Class Torpedo Launcher Flat</DisplayName>
+			<Description>A single tube torpedo launcher which boasts an autoloading compartment that contains everything needed to load torpedoes from storage into the tube.</Description>
+			<Icon>Icons\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<GuiVisible>false</GuiVisible>
+			<Public>false</Public>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat.mwm</Model>
+			<Components>
+				<Component Subtype="Girder" Count="150" />
+				<Component Subtype="SmallTube" Count="120" />
+				<Component Subtype="LargeTube" Count="135" />
+				<Component Subtype="InteriorPlate" Count="150" />
+					<DeconstructId>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>InnerTechScrap</SubtypeId>
+					</DeconstructId>
+			</Components>
+				<Component Subtype="Motor" Count="300" />
+				<Component Subtype="Computer" Count="300" />
+				<Component Subtype="MetalGrid" Count="300" />
+				<Component Subtype="Construction" Count="210" />
+				<Component Subtype="SteelPlate" Count="570" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.50"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.50" EndX="5.00" EndY="1.50"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.50" EndX="5.00" EndY="1.50"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="5.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Synirr\Weapons\UNN and MCRN\Shared Torpedo Launchers\Ares Class Large Torpedo Launcher\Ares Class Torpedo Launcher Flat_BS2.mwm"/>
+			</BuildProgressModels>
+			<StandbyPowerConsumption>1</StandbyPowerConsumption>
+			<OperationalPowerConsumption>45</OperationalPowerConsumption>
+			<BlockPairName>Ares Class Torpedo Launcher Flat MES</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.1</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<WeaponDefinitionId Subtype="Ares Class Torpedo Launcher Flat WeaponDefinition" />
+			<PCU>300</PCU>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

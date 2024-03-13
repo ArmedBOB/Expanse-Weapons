@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Apollo Class Torpedo Launcher WeaponDefinition</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="1" ShootSoundName="" ShotsInBurst="1"/>
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.25</DeviateShotAngle>
+      <ReleaseTimeAfterFire>1000</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>3</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="220mmExplosiveTorpedoMagazine" />
+        <AmmoMagazine Subtype="RamshackleTorpedoMagazine" />
+      </AmmoMagazines>
+	  <ReloadTime>21000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Apollo Class Torpedo Launcher MES WeaponDefinition</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="1" ShootSoundName="" ShotsInBurst="1"/>
+      <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.25</DeviateShotAngle>
+      <ReleaseTimeAfterFire>1000</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>3</MuzzleFlashLifeSpan>
+      <UseDefaultMuzzleFlash>false</UseDefaultMuzzleFlash>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="220mmExplosiveTorpedoMagazine" />
+        <AmmoMagazine Subtype="RamshackleTorpedoMagazine" />
+      </AmmoMagazines>
+      <ReloadTime>21000</ReloadTime>
+    </Weapon>
+  </Weapons>
+</Definitions>

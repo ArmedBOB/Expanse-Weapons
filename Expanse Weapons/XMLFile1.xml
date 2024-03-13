@@ -1,0 +1,13 @@
+﻿<Components>
+  <Component Subtype="SteelPlate" Count="20" />
+  <Component Subtype="Construction" Count="10" />
+  <Component Subtype="PowerCell" Count="80">
+    <DeconstructId>
+      <TypeId>Ingot</TypeId>
+      <SubtypeId>MachinedParts</SubtypeId>
+    </DeconstructId>
+  </Component>
+  <Component Subtype="Computer" Count="25" />
+  <Component Subtype="Construction" Count="20" />
+  <Component Subtype="SteelPlate" Count="60" />
+</Components>
